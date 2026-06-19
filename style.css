@@ -12,3 +12,7 @@ body {
 .card:hover {
   transform: scale(1.05);
 }
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
