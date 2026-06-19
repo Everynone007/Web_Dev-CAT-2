@@ -16,3 +16,14 @@ body {
   height: 200px;
   object-fit: cover;
 }
+.gallery img,
+.img-fluid {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.img-fluid:hover {
+  transform: scale(1.05);
+}
