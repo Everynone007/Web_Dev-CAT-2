@@ -1,3 +1,5 @@
+// Contact Form Validation
+
 const contactForm = document.getElementById("contactForm");
 
 if (contactForm) {
@@ -12,6 +14,8 @@ if (contactForm) {
     }
   });
 }
+
+// Dark Mode
 
 function toggleDarkMode() {
   document.body.classList.toggle("dark-mode");
