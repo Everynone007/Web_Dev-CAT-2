@@ -13,3 +13,7 @@ document
       event.preventDefault();
     }
   });
+
+function toggleDarkMode() {
+  document.body.classList.toggle("dark-mode");
+}
