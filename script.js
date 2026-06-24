@@ -30,3 +30,23 @@ function toggleDarkMode() {
 if (localStorage.getItem("theme") === "dark") {
   document.body.classList.add("dark-mode");
 }
+
+function filterProducts() {
+  let input = document.getElementById("searchInput");
+
+  if (!input) return;
+
+  let filter = input.value.toLowerCase();
+
+  let products = document.getElementsByClassName("product-card");
+
+  for (let i = 0; i < products.length; i++) {
+    let text = products[i].textContent.toLowerCase();
+
+    if (text.includes(filter)) {
+      products[i].style.display = "";
+    } else {
+      products[i].style.display = "none";
+    }
+  }
+}
