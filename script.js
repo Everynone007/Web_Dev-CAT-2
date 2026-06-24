@@ -32,21 +32,17 @@ if (localStorage.getItem("theme") === "dark") {
 }
 
 function filterProducts() {
-  let input = document.getElementById("searchInput");
+  let filter = document.getElementById("searchInput").value.toLowerCase();
 
-  if (!input) return;
+  let products = document.querySelectorAll(".product-card");
 
-  let filter = input.value.toLowerCase();
+  products.forEach(function (product) {
+    let title = product.querySelector("h5").textContent.toLowerCase();
 
-  let products = document.getElementsByClassName("product-card");
-
-  for (let i = 0; i < products.length; i++) {
-    let text = products[i].textContent.toLowerCase();
-
-    if (text.includes(filter)) {
-      products[i].style.display = "";
+    if (title.includes(filter)) {
+      product.style.display = "block";
     } else {
-      products[i].style.display = "none";
+      product.style.display = "none";
     }
-  }
+  });
 }
