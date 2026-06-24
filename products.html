@@ -66,8 +66,18 @@
     <section class="container my-5">
       <h1 class="text-center mb-4">Our Products</h1>
 
+      <div class="mb-4 product-card">
+        <input
+          type="text"
+          id="searchInput"
+          class="form-control"
+          placeholder="Search products..."
+          onkeyup="filterProducts()"
+        />
+      </div>
+
       <div class="row g-4">
-        <div class="col-md-4">
+        <div class="col-md-4 product-card">
           <div class="card h-100">
             <img src="images/laptop.jpg" class="card-img-top" alt="Laptop" />
 
@@ -81,7 +91,7 @@
           </div>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-4 product-card">
           <div class="card h-100">
             <img src="images/printers.jpg" class="card-img-top" alt="Printer" />
 
@@ -95,7 +105,7 @@
           </div>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-4 product-card">
           <div class="card h-100">
             <img src="images/routers.jpg" class="card-img-top" alt="Router" />
 
@@ -112,7 +122,7 @@
     </section>
     <!--next row-->
     <div class="row g-4 mt-2">
-      <div class="col-md-4">
+      <div class="col-md-4 product-card">
         <div class="card h-100">
           <div class="card-body">
             <h5>External Hard Drives</h5>
@@ -122,7 +132,7 @@
         </div>
       </div>
 
-      <div class="col-md-4">
+      <div class="col-md-4 product-card">
         <div class="card h-100">
           <div class="card-body">
             <h5>Gaming Mice</h5>
@@ -132,7 +142,7 @@
         </div>
       </div>
 
-      <div class="col-md-4">
+      <div class="col-md-4 product-card">
         <div class="card h-100">
           <div class="card-body">
             <h5>Mechanical Keyboards</h5>
